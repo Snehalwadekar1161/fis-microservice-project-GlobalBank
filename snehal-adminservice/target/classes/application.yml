@@ -1,0 +1,18 @@
+
+server:
+  port: 8083
+spring:
+  application:
+    name: Admin-SERVICE
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: Rps@12345
+    url: jdbc:mysql://localhost:3306/global_bank
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
